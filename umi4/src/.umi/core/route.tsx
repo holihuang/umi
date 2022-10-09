@@ -5,16 +5,21 @@ import React from 'react';
 
 export async function getRoutes() {
   return {
-    routes: {"1":{"path":"/login","file":"@/pages/login/index.tsx","parentId":"@@/global-layout","id":"1"},"2":{"path":"/","parentId":"@@/global-layout","id":"2"},"3":{"path":"/","file":"@/pages/index.tsx","parentId":"2","id":"3"},"4":{"path":"/","redirect":"/home","parentId":"3","id":"4"},"5":{"path":"home","file":"@/pages/home/index.tsx","parentId":"3","id":"5"},"6":{"path":"docs","file":"@/pages/docs.tsx","parentId":"3","id":"6"},"7":{"path":"","file":"@/pages/user/index.tsx","parentId":"8","id":"7","originPath":"user"},"8":{"path":"user","isWrapper":true,"file":"@/wrappers/auth.tsx","parentId":"3","id":"8"},"@@/global-layout":{"id":"@@/global-layout","path":"/","file":"@/layouts/index.tsx","isLayout":true}},
+    routes: {"1":{"path":"/login","file":"@/pages/login/index.tsx","parentId":"@@/global-layout","id":"1"},"2":{"path":"/","parentId":"@@/global-layout","id":"2"},"3":{"path":"/","file":"@/pages/index.tsx","parentId":"2","id":"3"},"4":{"path":"/","redirect":"/home","parentId":"3","id":"4"},"5":{"path":"home","file":"@/pages/home/index.tsx","parentId":"3","id":"5"},"6":{"path":"/home/a","file":"@/pages/home/A/index.tsx","parentId":"5","id":"6"},"7":{"path":"/home/a/c","file":"@/pages/home/A/C/index.tsx","parentId":"6","id":"7"},"8":{"path":"/home/a/c/d","file":"@/pages/home/A/C/D/index.tsx","parentId":"7","id":"8"},"9":{"path":"/home/a/c/d/e","file":"@/pages/home/A/C/D/E/index.tsx","parentId":"8","id":"9"},"10":{"path":"/home/b","file":"@/pages/home/B/index.tsx","parentId":"5","id":"10"},"11":{"path":"docs","file":"@/pages/docs.tsx","parentId":"3","id":"11"},"12":{"path":"","file":"@/pages/user/index.tsx","parentId":"13","id":"12","originPath":"user"},"13":{"path":"user","isWrapper":true,"file":"@/wrappers/auth.tsx","parentId":"3","id":"13"},"@@/global-layout":{"id":"@@/global-layout","path":"/","file":"@/layouts/index.tsx","isLayout":true}},
     routeComponents: {
 '1': React.lazy(() => import(/* webpackChunkName: "p__login__index" */'@/pages/login/index.tsx')),
 '2': React.lazy(() => import( './EmptyRoute')),
 '3': React.lazy(() => import(/* webpackChunkName: "p__index" */'@/pages/index.tsx')),
 '4': React.lazy(() => import( './EmptyRoute')),
 '5': React.lazy(() => import(/* webpackChunkName: "p__home__index" */'@/pages/home/index.tsx')),
-'6': React.lazy(() => import(/* webpackChunkName: "p__docs" */'@/pages/docs.tsx')),
-'7': React.lazy(() => import(/* webpackChunkName: "p__user__index" */'@/pages/user/index.tsx')),
-'8': React.lazy(() => import(/* webpackChunkName: "wrappers__auth" */'@/wrappers/auth.tsx')),
+'6': React.lazy(() => import(/* webpackChunkName: "p__home__A__index" */'@/pages/home/A/index.tsx')),
+'7': React.lazy(() => import(/* webpackChunkName: "p__home__A__C__index" */'@/pages/home/A/C/index.tsx')),
+'8': React.lazy(() => import(/* webpackChunkName: "p__home__A__C__D__index" */'@/pages/home/A/C/D/index.tsx')),
+'9': React.lazy(() => import(/* webpackChunkName: "p__home__A__C__D__E__index" */'@/pages/home/A/C/D/E/index.tsx')),
+'10': React.lazy(() => import(/* webpackChunkName: "p__home__B__index" */'@/pages/home/B/index.tsx')),
+'11': React.lazy(() => import(/* webpackChunkName: "p__docs" */'@/pages/docs.tsx')),
+'12': React.lazy(() => import(/* webpackChunkName: "p__user__index" */'@/pages/user/index.tsx')),
+'13': React.lazy(() => import(/* webpackChunkName: "wrappers__auth" */'@/wrappers/auth.tsx')),
 '@@/global-layout': React.lazy(() => import(/* webpackChunkName: "layouts__index" */'@/layouts/index.tsx')),
 },
   };
