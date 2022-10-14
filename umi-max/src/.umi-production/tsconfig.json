@@ -19,7 +19,7 @@
         "src/.umi/*"
       ],
       "@umijs/max": [
-        "/Users/hlyyinif/Desktop/umi/umi-max/node_modules/.pnpm/umi@4.0.24_6ym6q3qbwhbmi5rz5ieuyt344y/node_modules/umi"
+        "/Users/hlyyinif/Desktop/git/umi/umi-max/node_modules/.pnpm/umi@4.0.24_6ym6q3qbwhbmi5rz5ieuyt344y/node_modules/umi"
       ],
       "@umijs/max/typings": [
         "src/.umi/typings"

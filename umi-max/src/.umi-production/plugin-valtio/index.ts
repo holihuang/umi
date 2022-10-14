@@ -8,4 +8,4 @@ export {
   proxyWithDevtools,
   proxyMap,
   proxySet,
-} from '/Users/hlyyinif/Desktop/umi/umi-max/node_modules/.pnpm/@umijs+valtio@1.0.0/node_modules/@umijs/valtio';
+} from '/Users/hlyyinif/Desktop/git/umi/umi-max/node_modules/.pnpm/@umijs+valtio@1.0.0/node_modules/@umijs/valtio';
