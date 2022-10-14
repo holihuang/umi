@@ -6,11 +6,22 @@ export default defineConfig({
   access: {},
   model: {},
   initialState: {},
-  request: {},
+    request: {
+  },
   layout: {
     title: 'myApp',
     },
     dva: {},
+    proxy: {
+        '/api': {
+            // target: 'http://t.weather.sojson.com/api/weather/city/101030100',
+            target: 'http://t.weather.sojson.com/',
+            changeOrigin: true,
+            pathRewrite: {
+                // '^/api/weather': '',
+            },
+        }
+    },
     routes: [
         {
             path: '/',
@@ -58,6 +69,11 @@ export default defineConfig({
             name: 'Friend',
             path: '/friend',
             component: './Friend'
+        },
+        {
+            name: '天气',
+            path: '/weather',
+            component: './Weather',
         },
   ],
   npmClient: 'pnpm',
